@@ -1,31 +1,51 @@
-html{
+html {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-  }
-body{background-color: rgba(228, 217, 217, 0.753);}
-.container{background-color: white;}
-.title-container{background-color: #364f74 !important;}
-.title-cv{color: white;}
+}
 
-.body-container{padding-bottom: 1rem;}
-.job-description{margin-bottom:5px;}
+body {
+    background-color: rgba(228, 217, 217, 0.753);
+}
+
+.container {
+    background-color: white;
+}
+
+.title-container {
+    background-color: #364f74 !important;
+}
+
+.title-cv {
+    color: white;
+}
+
+.body-container {
+    padding-bottom: 1rem;
+}
+
+.job-description {
+    margin-bottom: 5px;
+}
+
 .tab {
     padding-left: 4rem;
 }
-.tab-description{
+
+.tab-description {
     padding-left: 6rem;
     padding-right: 6em;
     text-align: justify;
 }
-.tech-inline{
+
+.tech-inline {
     display: inline;
-    
 }
-.tech-box{
+
+.tech-box {
     background-color: #2ecc71;
     border-radius: 15px;
-    color:whitesmoke;
+    color: whitesmoke;
     pointer-events: none;
     margin-right: 3px;
     padding-right: 0.5rem;
@@ -35,45 +55,62 @@ body{background-color: rgba(228, 217, 217, 0.753);}
     float: left;
 }
 /*xs*/
-@media (max-width: 576px)
-{
-    .img-title{
+@media (max-width: 576px) {
+    .img-title {
         width: 15%;
     }
-    .row-container{
+
+    .row-container {
         text-align: center;
-    } 
+    }
+
+    .tab {
+        padding-left: 2rem;
+    }
+
+    .tab-description {
+        padding-left: 4rem;
+        padding-right: 4em;
+        text-align: justify;
+    }
 }
 /*sm*/
-@media (min-width: 576px)
-{
-    .img-title{
+@media (min-width: 576px) {
+    .img-title {
         width: 95%;
     }
-    
 }
 /*md*/
-@media (min-width: 768px)
- {
-    .img-title{
+@media (min-width: 768px) {
+    .img-title {
         width: 60%;
     }
 }
 /*lg*/
-@media (min-width: 992px){
-    .img-title{
+@media (min-width: 992px) {
+    .img-title {
         width: 91%;
     }
 }
 
 
 
-.img-social{
+.img-social {
     width: 20px;
 }
 
-.copyright{
+.copyright {
     font-size: small;
     color: gray;
     text-align: right;
 }
+
+
+iframe {
+    display: inline !important;
+    text-align: center;
+}
+
+    iframe ~ body {
+        text-align: center;
+    }
