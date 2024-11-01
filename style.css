@@ -2,6 +2,7 @@ html {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    -webkit-print-color-adjust: exact;
 }
 
 body {
@@ -54,6 +55,9 @@ body {
     font-size: x-small;
     margin: 1px;
     float: left;
+    -webkit-print-color-adjust: exact;
+  
+
 }
 /*xs*/
 @media (max-width: 576px) {
