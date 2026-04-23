@@ -564,3 +564,184 @@ section { padding: 80px 0; }
   .nav-links { gap: 12px; }
   .hero h1 { font-size: 2.4rem; }
 }
+
+/* --- PRINT BUTTON --- */
+.btn-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-print:hover {
+  border-color: var(--text-muted);
+  background: rgba(255,255,255,0.03);
+}
+
+/* --- PRINT STYLES --- */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.6in 0.65in;
+  }
+
+  *, *::before, *::after {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  :root {
+    --bg: #ffffff;
+    --bg-card: #f7f8fa;
+    --bg-card-hover: #f0f1f4;
+    --accent: #1a5cc8;
+    --accent-glow: rgba(26, 92, 200, 0.08);
+    --accent-warm: #d4451a;
+    --text: #1a1a2e;
+    --text-muted: #4a4a60;
+    --text-dim: #7a7a90;
+    --border: rgba(0,0,0,0.1);
+    --border-accent: rgba(26,92,200,0.2);
+  }
+
+  body {
+    background: #fff !important;
+    font-size: 10pt;
+    line-height: 1.45;
+  }
+  body::after { display: none !important; }
+
+  .orb, .orb-2 { display: none !important; }
+  nav { display: none !important; }
+  .no-print { display: none !important; }
+
+  .hero {
+    padding: 0 0 16px !important;
+  }
+  .hero-badge {
+    margin-bottom: 10px;
+    font-size: 7pt;
+    padding: 3px 10px;
+    border: 1px solid var(--accent);
+    background: transparent;
+    animation: none !important;
+  }
+  .hero-badge .pulse { display: none; }
+  .hero h1 {
+    font-size: 26pt !important;
+    margin-bottom: 10px;
+    animation: none !important;
+  }
+  .hero-subtitle {
+    font-size: 9.5pt;
+    animation: none !important;
+  }
+  .hero-meta {
+    margin-top: 14px;
+    gap: 24px;
+    animation: none !important;
+  }
+  .hero-meta-item .number { font-size: 16pt; }
+  .hero-meta-item .label { font-size: 6.5pt; }
+  .hero-cta { display: none !important; }
+
+  /* Print contact info header */
+  .print-contact {
+    display: flex !important;
+    justify-content: center;
+    gap: 24px;
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 6px;
+  }
+  .print-contact a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  section {
+    padding: 16px 0 !important;
+  }
+  .section-label { font-size: 7pt; margin-bottom: 4px; }
+  .section-title {
+    font-size: 14pt !important;
+    margin-bottom: 14px !important;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+  }
+  .skill-card {
+    padding: 12px;
+    border-radius: 6px;
+    page-break-inside: avoid;
+  }
+  .skill-card::before { display: none; }
+  .skill-card-icon { display: none; }
+  .skill-card h3 { font-size: 9pt; margin-bottom: 4px; }
+  .skill-card p { font-size: 7.5pt; line-height: 1.35; }
+  .skill-tags { margin-top: 8px; }
+  .skill-tag { font-size: 6pt; padding: 2px 5px; }
+
+  .timeline-item {
+    padding-bottom: 18px !important;
+    page-break-inside: avoid;
+  }
+  .timeline-role { font-size: 10.5pt; }
+  .timeline-company { font-size: 9pt; }
+  .timeline-date {
+    font-size: 7pt;
+    padding: 2px 8px;
+    background: transparent !important;
+  }
+  .timeline-desc { font-size: 8.5pt; }
+  .timeline-desc li { margin-bottom: 2px; }
+  .timeline-clients { font-size: 7.5pt; }
+  .timeline-tech span { font-size: 6pt; padding: 1px 5px; }
+
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px;
+  }
+  .cert-item {
+    padding: 10px;
+    page-break-inside: avoid;
+  }
+  .cert-icon { display: none; }
+  .cert-name { font-size: 8pt; }
+
+  .edu-card {
+    padding: 16px;
+  }
+  .edu-degree { font-size: 11pt; }
+  .edu-school { font-size: 8.5pt; }
+  .edu-faculty { font-size: 8pt; }
+
+  .footer { display: none !important; }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
+
+/* Hide print-only elements on screen */
+.print-contact { display: none; }
