@@ -510,30 +510,23 @@ section { padding: 80px 0; }
 }
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  text-align: center;
+  gap: 24px;
 }
-.footer-left { }
 .footer-tagline {
   font-family: var(--serif);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 8px;
 }
-.footer-email {
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.3s;
+.footer-buttons {
+  display: flex;
+  gap: 14px;
 }
-.footer-email:hover { color: #6ba0ff; }
 .footer-copy {
   color: var(--text-dim);
   font-size: 0.75rem;
-  margin-top: 16px;
 }
 
 /* --- SCROLL REVEAL --- */
@@ -555,7 +548,9 @@ section { padding: 80px 0; }
   .nav-links { gap: 16px; }
   .nav-links a { font-size: 0.75rem; }
   .timeline-header { flex-direction: column; }
-  .footer-content { flex-direction: column; text-align: center; }
+  .footer-buttons { flex-direction: column; gap: 10px; }
+  .footer-buttons .btn-primary,
+  .footer-buttons .btn-secondary { justify-content: center; }
   .skills-grid { grid-template-columns: 1fr; }
 }
 
