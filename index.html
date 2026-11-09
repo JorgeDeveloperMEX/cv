@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -43,6 +43,19 @@
 <body>
 
 <div class="circuit-bg" aria-hidden="true"><canvas id="circuit"></canvas></div>
+
+<!-- Print-only résumé header (hidden on screen) -->
+<header class="print-header print-only" aria-hidden="true">
+  <div>
+    <div class="ph-name">Jorge <span>Silva</span></div>
+    <div class="ph-title">Sr. .NET Engineer</div>
+  </div>
+  <div class="ph-contact">
+    jorge.silva.it@icloud.com<br>
+    linkedin.com/in/fullstack-developer-jorge-silva<br>
+    Nuevo León, Mexico
+  </div>
+</header>
 
 <a class="skip-nav" href="#main">Skip to main content</a>
 
@@ -163,6 +176,7 @@
       <!-- Text -->
       <div class="about-text reveal reveal--delay-1">
         <p class="section-label">Who I Am</p>
+        <h2 class="print-h print-only" aria-hidden="true">Summary</h2>
         <h2 class="section-title" id="about-h">Engineer by craft,<br>architect by instinct.</h2>
 
         <div class="deco-rule" aria-hidden="true" style="max-width:200px;margin:20px 0 24px;">
@@ -213,6 +227,7 @@
         <div class="deco-line"></div>
       </div>
     </div>
+    <h2 class="print-h print-only" aria-hidden="true">Core Skills</h2>
 
     <div class="expertise-grid">
       <div class="exp-card reveal">
