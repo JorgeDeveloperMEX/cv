@@ -3,388 +3,521 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jorge Silva — Sr. .NET Backend Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<title>Jorge Silva — Sr. .NET Engineer</title>
+<meta name="description" content="Sr. .NET Engineer — 13+ years building and modernizing .NET API services for PepsiCo, Starbucks, Bank of America, Rivian, and Walmart.">
+<meta name="author" content="Jorge Silva">
+<meta name="theme-color" content="#09111e">
+<link rel="canonical" href="https://jorgedevelopermex.github.io/cv/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph / social previews -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jorge Silva — Sr. .NET Engineer">
+<meta property="og:description" content="13+ years building and modernizing .NET API services for PepsiCo, Starbucks, Bank of America, Rivian & Walmart.">
+<meta property="og:url" content="https://jorgedevelopermex.github.io/cv/">
+<meta property="og:image" content="https://jorgedevelopermex.github.io/cv/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jorge Silva",
+  "jobTitle": "Sr. .NET Engineer",
+  "url": "https://jorgedevelopermex.github.io/cv/",
+  "image": "https://jorgedevelopermex.github.io/cv/assets/img/photo.jpg",
+  "email": "mailto:jorge.silva.it@icloud.com",
+  "address": { "@type": "PostalAddress", "addressRegion": "Nuevo León", "addressCountry": "MX" },
+  "sameAs": ["https://www.linkedin.com/in/fullstack-developer-jorge-silva/"],
+  "knowsAbout": [".NET", "C#", "Azure", "AWS", "React", "TypeScript", "MS SQL Server", "REST API", "gRPC", "Docker"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400&family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
-<div class="orb"></div>
-<div class="orb-2"></div>
+<div class="circuit-bg" aria-hidden="true"><canvas id="circuit"></canvas></div>
 
-<div class="print-contact">
-  <span>jorge.silva.it@icloud.com</span>
-  <span>linkedin.com/in/fullstack-developer-jorge-silva</span>
-  <span>Nuevo Leon, Mexico</span>
-</div>
+<a class="skip-nav" href="#main">Skip to main content</a>
 
-<nav>
+<!-- ══════════════════════ NAV ══════════════════════ -->
+<nav id="nav" aria-label="Main navigation">
   <div class="container">
-    <a href="#" class="nav-logo">Jorge<span>.</span>S</a>
-    <ul class="nav-links">
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#certifications">Certs</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://www.linkedin.com/in/fullstack-developer-jorge-silva/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Jorge Silva — home">Jorge<span>.</span>S</a>
+
+      <button class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              aria-label="Open navigation menu">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="mailto:jorge.silva.it@icloud.com" class="nav-cta">Hire Me</a>
+    </div>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container">
-    <!-- 
-    <div class="hero-badge">
-      
-      <span class="pulse"></span>
-      Available for opportunities
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section id="hero" class="hero" aria-labelledby="hero-name">
+  <div class="hero-inner">
+
+    <p class="hero-eyebrow reveal">Nuevo León, Mexico &nbsp;◆&nbsp; Available for Opportunities</p>
+
+    <div class="deco-rule deco-rule--center reveal reveal--delay-1" aria-hidden="true">
+      <div class="deco-line"></div>
+      <div class="deco-diamond deco-diamond--lg"></div>
+      <div class="deco-line"></div>
     </div>
-    -->
-    <h1>
-      Sr. <span class="accent">.NET</span><br>
-      Backend <span class="warm">Engineer</span>
+
+    <h1 class="hero-name reveal reveal--delay-1" id="hero-name">
+      Jorge
+      <span class="surname">Silva</span>
     </h1>
-    <p class="hero-subtitle">
-      Building scalable API services and modernizing legacy systems for enterprise clients.
-      Specialized in .NET, Azure Cloud, and React — delivering secure, high-performance
-      solutions across automotive, banking, retail, and manufacturing industries.
+
+    <div class="deco-rule deco-rule--center reveal reveal--delay-2" aria-hidden="true">
+      <div class="deco-line"></div>
+      <div class="deco-diamond"></div>
+      <div class="deco-line"></div>
+    </div>
+
+    <p class="hero-title reveal reveal--delay-2">Sr. .NET Engineer</p>
+
+    <p class="hero-sub reveal reveal--delay-3">
+      13+ years building and modernizing .NET API services for
+      <em>PepsiCo, Starbucks, Bank of America, Rivian &amp; Walmart</em>.
     </p>
-    <div class="hero-meta">
-      <div class="hero-meta-item">
-        <span class="number">8+</span>
-        <span class="label">Years Experience</span>
-      </div>
-      <div class="hero-meta-item">
-        <span class="number">7</span>
-        <span class="label">Companies</span>
-      </div>
-      <div class="hero-meta-item">
-        <span class="number">4</span>
-        <span class="label">Industries</span>
-      </div>
+
+    <div class="hero-cta reveal reveal--delay-3">
+      <a href="mailto:jorge.silva.it@icloud.com" class="btn-gold">
+        Get in Touch
+      </a>
+      <a href="#experience" class="btn-ghost">
+        View Career ↓
+      </a>
     </div>
-    <div class="hero-cta">
-      <a href="mailto:jorge.silva.it@icloud.com" class="btn-primary">
-        ✉ Get In Touch
-      </a>
-      <a href="https://www.linkedin.com/in/fullstack-developer-jorge-silva/" target="_blank" rel="noopener" class="btn-secondary">
-        in LinkedIn Profile ↗
-      </a>
-      <button onclick="window.print()" class="btn-print no-print">
-        🖨 Print / Save PDF
-      </button>
+
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-hint-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════ CREDENTIALS STRIP ══════════════════════ -->
+<div class="cred-strip" aria-label="Career highlights">
+  <div class="container">
+    <div class="cred-grid">
+      <div class="cred-item reveal">
+        <span class="cred-num" aria-label="13 or more">13+</span>
+        <span class="cred-label">Years of Practice</span>
+        <span class="cred-desc">Continuous delivery since 2013</span>
+      </div>
+      <div class="cred-item reveal reveal--delay-1">
+        <span class="cred-num">7</span>
+        <span class="cred-label">Companies</span>
+        <span class="cred-desc">From startup to global enterprise</span>
+      </div>
+      <div class="cred-item reveal reveal--delay-2">
+        <span class="cred-num">4</span>
+        <span class="cred-label">Industries</span>
+        <span class="cred-desc">Automotive · Banking · Retail · Manufacturing</span>
+      </div>
     </div>
   </div>
-</header>
+</div>
 
-<section id="skills">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">What I Bring</p>
-      <h2 class="section-title">Core Expertise</h2>
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<section id="about" class="about" aria-labelledby="about-h">
+  <div class="container container--narrow">
+    <div class="about-grid">
+
+      <!-- Photo -->
+      <div class="reveal">
+        <div class="photo-frame-wrap">
+          <span class="c c-tl" aria-hidden="true"></span>
+          <span class="c c-tr" aria-hidden="true"></span>
+          <span class="c c-bl" aria-hidden="true"></span>
+          <span class="c c-br" aria-hidden="true"></span>
+          <img src="assets/img/photo.jpg" alt="Jorge Silva, Sr. .NET Engineer">
+        </div>
+        <p class="photo-caption">Jorge Silva · Nuevo León, MX</p>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text reveal reveal--delay-1">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title" id="about-h">Engineer by craft,<br>architect by instinct.</h2>
+
+        <div class="deco-rule" aria-hidden="true" style="max-width:200px;margin:20px 0 24px;">
+          <div class="deco-line"></div>
+          <div class="deco-diamond"></div>
+        </div>
+
+        <p class="about-p">
+          I build scalable API services and <strong>modernize legacy systems</strong> for enterprise clients. Specialized in <strong>.NET, Azure Cloud, and React</strong> — delivering secure, high-performance solutions across automotive, banking, retail, and manufacturing industries.
+        </p>
+        <p class="about-p">
+          My work spans from <strong>Blazor and WinForms</strong> to cloud-native architectures on Azure — always with a focus on code quality, security, and the craftsmanship that makes systems genuinely maintainable.
+        </p>
+
+        <div aria-label="Contact information" class="about-contact">
+          <div class="ac-item">
+            <span class="ac-glyph">Mail</span>
+            <a href="mailto:jorge.silva.it@icloud.com">jorge.silva.it@icloud.com</a>
+          </div>
+          <div class="ac-item">
+            <span class="ac-glyph">In</span>
+            <a href="https://www.linkedin.com/in/fullstack-developer-jorge-silva/"
+               target="_blank" rel="noopener"
+               aria-label="LinkedIn profile (opens in new tab)">
+              linkedin.com/in/fullstack-developer-jorge-silva ↗
+            </a>
+          </div>
+          <div class="ac-item">
+            <span class="ac-glyph">Loc</span>
+            <span>Nuevo León, Mexico</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="skill-card-icon">⚙️</div>
-        <h3>Backend & API Architecture</h3>
-        <p>Designing and maintaining robust .NET API services for large-scale enterprise clients, with focus on security, scalability, and performance.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">.NET 8</span>
-          <span class="skill-tag">.NET Core</span>
-          <span class="skill-tag">REST API</span>
-          <span class="skill-tag">WCF</span>
-          <span class="skill-tag">gRPC</span>
+  </div>
+</section>
+
+<!-- ══════════════════════ EXPERTISE ══════════════════════ -->
+<section id="expertise" class="expertise" aria-labelledby="exp-h">
+  <div class="container">
+    <div class="expertise-head reveal">
+      <p class="section-label" style="text-align:center">Core Disciplines</p>
+      <h2 class="section-title" id="exp-h" style="text-align:center">Areas of Mastery</h2>
+      <div class="deco-rule deco-rule--center" aria-hidden="true" style="margin-top:20px;">
+        <div class="deco-line"></div>
+        <div class="deco-diamond deco-diamond--lg"></div>
+        <div class="deco-line"></div>
+      </div>
+    </div>
+
+    <div class="expertise-grid">
+      <div class="exp-card reveal">
+        <div class="exp-card-num">01 · Backend &amp; API</div>
+        <h3 class="exp-card-title">Precision-Built<br>API Services</h3>
+        <p class="exp-card-desc">
+          Designing and maintaining robust .NET API services for large-scale enterprise clients. Deep expertise in architecture, security hardening, and performance at scale.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">.NET 8</span>
+          <span class="exp-tag">.NET Core</span>
+          <span class="exp-tag">REST API</span>
+          <span class="exp-tag">WCF</span>
+          <span class="exp-tag">gRPC</span>
         </div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-icon">☁️</div>
-        <h3>Cloud & DevOps</h3>
-        <p>Migrating legacy systems to cloud-native architectures. Experienced with Azure services, Docker containers, and AWS infrastructure.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Azure</span>
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">TFS</span>
+
+      <div class="exp-card reveal reveal--delay-1">
+        <div class="exp-card-num">02 · Cloud &amp; Infrastructure</div>
+        <h3 class="exp-card-title">Cloud-Native<br>Modernization</h3>
+        <p class="exp-card-desc">
+          Migrating legacy systems to cloud-native architectures with Azure and AWS. Docker containers, CI/CD pipelines, and infrastructure aligned to Microsoft LTS standards.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">Azure</span>
+          <span class="exp-tag">AWS</span>
+          <span class="exp-tag">Docker</span>
+          <span class="exp-tag">Git / TFS</span>
         </div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-icon">🗄️</div>
-        <h3>Database & Data Layer</h3>
-        <p>Optimizing complex SQL queries, stored procedures, and ORM configurations for high-throughput production environments.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">MS SQL Server</span>
-          <span class="skill-tag">NHibernate</span>
-          <span class="skill-tag">EF6</span>
-          <span class="skill-tag">Informix</span>
+
+      <div class="exp-card reveal reveal--delay-2">
+        <div class="exp-card-num">03 · Database &amp; Data Layer</div>
+        <h3 class="exp-card-title">High-Throughput<br>Data Engineering</h3>
+        <p class="exp-card-desc">
+          Optimizing complex SQL queries, stored procedures, and ORM configurations for high-throughput production environments.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">MS SQL Server</span>
+          <span class="exp-tag">NHibernate</span>
+          <span class="exp-tag">EF6</span>
+          <span class="exp-tag">Informix</span>
         </div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-icon">🖥️</div>
-        <h3>Frontend & UI</h3>
-        <p>Building modern web interfaces with React and TypeScript, migrating from legacy WinForms and Blazor to responsive, component-based architectures.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Angular</span>
-          <span class="skill-tag">Blazor</span>
+
+      <div class="exp-card reveal">
+        <div class="exp-card-num">04 · Frontend &amp; UI</div>
+        <h3 class="exp-card-title">Modern Interfaces<br>&amp; Migration</h3>
+        <p class="exp-card-desc">
+          Building modern web interfaces with React and TypeScript, migrating from legacy WinForms and Blazor to responsive, component-based architectures.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">React</span>
+          <span class="exp-tag">TypeScript</span>
+          <span class="exp-tag">Angular</span>
+          <span class="exp-tag">Blazor</span>
         </div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-icon">🔒</div>
-        <h3>Compliance & Security</h3>
-        <p>Ensuring applications meet regulatory standards across banking and financial sectors, including ISO-X, SAR, and BANXICO compliance.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">ISO-X</span>
-          <span class="skill-tag">SAR</span>
-          <span class="skill-tag">BANXICO</span>
-          <span class="skill-tag">L2/L3 Support</span>
+
+      <div class="exp-card reveal reveal--delay-1">
+        <div class="exp-card-num">05 · Compliance &amp; Security</div>
+        <h3 class="exp-card-title">Regulated<br>Financial Systems</h3>
+        <p class="exp-card-desc">
+          Ensuring applications meet regulatory standards across banking and financial sectors, including ISO-X, SAR, and BANXICO compliance.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">ISO-X</span>
+          <span class="exp-tag">SAR</span>
+          <span class="exp-tag">BANXICO</span>
+          <span class="exp-tag">L2/L3 Support</span>
         </div>
       </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-icon">📐</div>
-        <h3>Agile & Leadership</h3>
-        <p>Managing delivery through retrospective, diagnostic, and predictive metrics. Code reviews, mentoring teams, and cross-team collaboration.</p>
-        <div class="skill-tags">
-          <span class="skill-tag">Scrum</span>
-          <span class="skill-tag">Lean Six Sigma</span>
-          <span class="skill-tag">Code Review</span>
-          <span class="skill-tag">Mentoring</span>
+
+      <div class="exp-card reveal reveal--delay-2">
+        <div class="exp-card-num">06 · Agile &amp; Leadership</div>
+        <h3 class="exp-card-title">Delivery &amp;<br>Team Leadership</h3>
+        <p class="exp-card-desc">
+          Managing delivery through retrospective, diagnostic, and predictive metrics. Code reviews, mentoring teams, and cross-team collaboration.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">Scrum</span>
+          <span class="exp-tag">Lean Six Sigma</span>
+          <span class="exp-tag">Code Review</span>
+          <span class="exp-tag">Mentoring</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="experience">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">Career Path</p>
-      <h2 class="section-title">Professional Experience</h2>
+<!-- ══════════════════════ EXPERIENCE ══════════════════════ -->
+<section id="experience" class="experience" aria-labelledby="career-h">
+  <div class="container container--narrow" id="main">
+    <div class="experience-head reveal">
+      <p class="section-label">Career Timeline</p>
+      <h2 class="section-title" id="career-h">Professional History</h2>
+      <div class="deco-rule" aria-hidden="true" style="max-width:220px;margin:20px 0 0;">
+        <div class="deco-line"></div>
+        <div class="deco-diamond"></div>
+      </div>
     </div>
+
     <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Sr. .NET Backend Engineer</div>
-            <div class="timeline-company">Sedgwick</div>
-          </div>
-          <div class="timeline-date">Jun 2022 — Present</div>
-        </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>Develop and maintain .NET API services for large-scale enterprise clients</li>
-            <li>Lead the migration of legacy systems to .NET 8, React, and Azure Cloud</li>
-            <li>Conduct code reviews enforcing best practices in security and performance</li>
-            <li>Design robust API architecture with comprehensive documentation</li>
-          </ul>
-          <div class="timeline-clients">Clients: PepsiCo, Starbucks, Bank of America, Rivian, Walmart</div>
-        </div>
-        <div class="timeline-tech">
-          <span>.NET 8</span><span>React</span><span>TypeScript</span><span>Azure</span><span>Docker</span><span>MS SQL</span><span>NHibernate</span><span>NUnit</span>
-        </div>
-      </div>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">.NET Technology Lead</div>
-            <div class="timeline-company">Infosys</div>
-          </div>
-          <div class="timeline-date">May 2021 — Jun 2022</div>
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="June 2022 to present">
+          2022<br>—<br>NOW
+          <span class="now" aria-label="Current position">◆ Present</span>
         </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>Provided Level 3 support for internal applications, resolving complex errors and security vulnerabilities</li>
-            <li>Ensured compliance with ISO-X regulations and strengthened security measures</li>
+        <div>
+          <div class="tl-role">Sr. .NET Engineer</div>
+          <div class="tl-company">Sedgwick</div>
+          <ul class="tl-desc">
+            <li>Develop and maintain .NET API services for large-scale enterprise clients including PepsiCo, Starbucks, and Bank of America</li>
+            <li>Lead migration of legacy systems to .NET 8, React, and Azure Cloud; conduct code reviews enforcing security and performance standards</li>
           </ul>
+          <div class="tl-clients">Clients: PepsiCo · Starbucks · Bank of America · Rivian · Walmart</div>
+          <div class="tl-tech">
+            <span>.NET 8</span><span>React</span><span>TypeScript</span><span>Azure</span>
+            <span>Docker</span><span>MS SQL</span><span>NHibernate</span><span>NUnit</span>
+          </div>
         </div>
-        <div class="timeline-tech">
-          <span>.NET Core</span><span>AngularJS</span><span>MS SQL</span><span>WCF</span><span>EF6</span>
-        </div>
-      </div>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Central Support Engineer</div>
-            <div class="timeline-company">FEMSA — OXXOGAS</div>
-          </div>
-          <div class="timeline-date">Aug 2020 — May 2021</div>
-        </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>L2/L3 support across multiple projects, analyzing incidents at application and infrastructure levels in Azure Cloud</li>
-            <li>Led troubleshooting for logical errors and validated business rule adherence</li>
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="May 2021 to June 2022">2021<br>—<br>2022</div>
+        <div>
+          <div class="tl-role">.NET Technology Lead</div>
+          <div class="tl-company">Infosys</div>
+          <ul class="tl-desc">
+            <li>Level 3 support for internal applications; resolved complex errors and security vulnerabilities</li>
+            <li>Ensured ISO-X compliance and strengthened security across .NET, Angular, and VB applications</li>
           </ul>
+          <div class="tl-tech"><span>.NET Core</span><span>AngularJS</span><span>MS SQL</span><span>WCF</span><span>EF6</span></div>
         </div>
-        <div class="timeline-tech">
-          <span>.NET Core</span><span>Angular</span><span>Python</span><span>MS SQL</span><span>Azure</span>
-        </div>
-      </div>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Sr. .NET Developer</div>
-            <div class="timeline-company">PlanCredi</div>
-          </div>
-          <div class="timeline-date">Sep 2018 — Aug 2020</div>
-        </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>Managed project delivery through Agile methodologies with diagnostic and predictive metrics</li>
-            <li>Oversaw server infrastructure, AWS services, and digital strategies</li>
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="August 2020 to May 2021">2020<br>—<br>2021</div>
+        <div>
+          <div class="tl-role">Central Support Engineer</div>
+          <div class="tl-company">FEMSA — OXXOGAS</div>
+          <ul class="tl-desc">
+            <li>L2/L3 support across multiple Azure Cloud projects, analyzing incidents at application and infrastructure levels</li>
+            <li>Led troubleshooting for logical errors; validated business rule adherence across integrations</li>
           </ul>
+          <div class="tl-tech"><span>.NET Core</span><span>Angular</span><span>Python</span><span>MS SQL</span><span>Azure</span></div>
         </div>
-        <div class="timeline-tech">
-          <span>Blazor</span><span>.NET Core</span><span>AWS</span><span>Angular</span><span>MS SQL</span>
-        </div>
-      </div>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">EC Architecture & Development</div>
-            <div class="timeline-company">INVERCAP</div>
-          </div>
-          <div class="timeline-date">Nov 2017 — Sep 2018</div>
-        </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>Developed internal web applications in compliance with SAR and BANXICO regulations</li>
-            <li>Updated architectural documents ensuring system integrity</li>
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="September 2018 to August 2020">2018<br>—<br>2020</div>
+        <div>
+          <div class="tl-role">Sr. .NET Developer</div>
+          <div class="tl-company">PlanCredi</div>
+          <ul class="tl-desc">
+            <li>Managed Agile project delivery using diagnostic and predictive metrics</li>
+            <li>Oversaw AWS infrastructure, server management, and digital strategy aligned to Microsoft LTS</li>
           </ul>
+          <div class="tl-tech"><span>Blazor</span><span>.NET Core</span><span>AWS</span><span>Angular</span><span>MS SQL</span></div>
         </div>
-        <div class="timeline-tech">
-          <span>.NET Framework</span><span>MS SQL</span><span>WebMethods</span><span>Visual Basic</span><span>Informix</span>
-        </div>
-      </div>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Full Stack .NET Developer</div>
-            <div class="timeline-company">Exagono Software</div>
-          </div>
-          <div class="timeline-date">Jan 2014 — Nov 2017</div>
-        </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>Built scalable web applications and PaaS solutions for top automotive brands</li>
-            <li>Ensured high availability and L2/L3 support for critical client applications</li>
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="November 2017 to September 2018">2017<br>—<br>2018</div>
+        <div>
+          <div class="tl-role">EC Architecture &amp; Development</div>
+          <div class="tl-company">INVERCAP</div>
+          <ul class="tl-desc">
+            <li>Developed internal web applications compliant with SAR and BANXICO financial regulations</li>
+            <li>Updated architectural documentation ensuring system integrity and minimal operational disruption</li>
           </ul>
-          <div class="timeline-clients">Clients: Ford, Chrysler, FIAT, VW, Mercedes-Benz</div>
+          <div class="tl-tech"><span>.NET Framework</span><span>MS SQL</span><span>WebMethods</span><span>Visual Basic</span><span>Informix</span></div>
         </div>
-        <div class="timeline-tech">
-          <span>.NET Framework</span><span>MS SQL</span><span>WCF</span><span>ASMX</span>
-        </div>
-      </div>
+      </article>
 
-      <div class="timeline-item reveal">
-        <div class="timeline-header">
-          <div>
-            <div class="timeline-role">Jr. .NET Developer</div>
-            <div class="timeline-company">AG Desarrollo</div>
-          </div>
-          <div class="timeline-date">May 2013 — Jan 2014</div>
-        </div>
-        <div class="timeline-desc">
-          <ul>
-            <li>Performed CRUD operations through optimized stored procedures</li>
-            <li>Maintained and enhanced .NET desktop applications for production environments</li>
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="January 2014 to November 2017">2014<br>—<br>2017</div>
+        <div>
+          <div class="tl-role">Full Stack .NET Developer</div>
+          <div class="tl-company">Exagono Software</div>
+          <ul class="tl-desc">
+            <li>Built scalable PaaS web applications for Ford, Chrysler, FIAT, Volkswagen, and Mercedes-Benz</li>
+            <li>Maintained high availability and L2/L3 support for critical production applications</li>
           </ul>
+          <div class="tl-tech"><span>.NET Framework</span><span>MS SQL</span><span>WCF</span><span>ASMX</span></div>
         </div>
-        <div class="timeline-tech">
-          <span>.NET Framework</span><span>WinForms</span><span>MS SQL</span>
+      </article>
+
+      <article class="timeline-item reveal">
+        <div class="tl-dates" aria-label="May 2013 to January 2014">2013<br>—<br>2014</div>
+        <div>
+          <div class="tl-role">Jr. .NET Developer</div>
+          <div class="tl-company">AG Desarrollo</div>
+          <ul class="tl-desc">
+            <li>CRUD operations via optimized SQL Server stored procedures</li>
+            <li>Maintained and enhanced .NET desktop applications in production environments</li>
+          </ul>
+          <div class="tl-tech"><span>.NET Framework</span><span>WinForms</span><span>MS SQL</span></div>
         </div>
-      </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<section id="certifications">
+<!-- ══════════════════════ CLIENTS ══════════════════════ -->
+<section class="clients" id="clients" aria-label="Selected enterprise clients">
   <div class="container">
-    <div class="reveal">
+    <div class="clients-head reveal">
+      <p class="section-label">Enterprise Portfolio</p>
+      <h2 class="section-title">Selected Clients</h2>
+      <div class="deco-rule deco-rule--center" aria-hidden="true" style="margin-top:20px;">
+        <div class="deco-line"></div>
+        <div class="deco-diamond deco-diamond--lg"></div>
+        <div class="deco-line"></div>
+      </div>
+    </div>
+    <ul class="clients-list reveal reveal--delay-1">
+      <li class="client-name">PepsiCo</li>
+      <li class="client-name">Starbucks</li>
+      <li class="client-name">Bank of America</li>
+      <li class="client-name">Rivian</li>
+      <li class="client-name">Walmart</li>
+      <li class="client-name">Ford Motor</li>
+      <li class="client-name">Chrysler</li>
+      <li class="client-name">Volkswagen</li>
+      <li class="client-name">Mercedes-Benz</li>
+      <li class="client-name">Invercap</li>
+      <li class="client-name">FEMSA</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════ CERTIFICATIONS ══════════════════════ -->
+<section class="certs" aria-labelledby="cert-h">
+  <div class="container container--narrow">
+    <div class="certs-head reveal">
       <p class="section-label">Continuous Learning</p>
-      <h2 class="section-title">Certifications</h2>
+      <h2 class="section-title" id="cert-h">Certifications</h2>
     </div>
     <div class="cert-grid">
       <div class="cert-item reveal">
-        <div class="cert-icon">🏗️</div>
-        <div class="cert-name">SOLID Principles & Clean Code</div>
+        <span class="cert-id">C·001</span>
+        <span class="cert-name-text">SOLID Principles &amp; Clean Code</span>
+      </div>
+      <div class="cert-item reveal reveal--delay-1">
+        <span class="cert-id">C·002</span>
+        <span class="cert-name-text">gRPC API &amp; Microservices</span>
+      </div>
+      <div class="cert-item reveal reveal--delay-2">
+        <span class="cert-id">C·003</span>
+        <span class="cert-name-text">Scrum Fundamentals Certified</span>
+      </div>
+      <div class="cert-item reveal reveal--delay-3">
+        <span class="cert-id">C·004</span>
+        <span class="cert-name-text">Lean Six Sigma White Belt</span>
       </div>
       <div class="cert-item reveal">
-        <div class="cert-icon">🔗</div>
-        <div class="cert-name">gRPC API & Microservices</div>
-      </div>
-      <div class="cert-item reveal">
-        <div class="cert-icon">🔄</div>
-        <div class="cert-name">Scrum Fundamentals Certified</div>
-      </div>
-      <div class="cert-item reveal">
-        <div class="cert-icon">📊</div>
-        <div class="cert-name">Lean Six Sigma White Belt</div>
-      </div>
-      <div class="cert-item reveal">
-        <div class="cert-icon">📚</div>
-        <div class="cert-name">Currently: React & Golang</div>
+        <span class="cert-id">IN·PROGRESS</span>
+        <span class="cert-name-text">React &amp; Golang</span>
+        <span class="cert-active">Currently learning</span>
       </div>
     </div>
   </div>
 </section>
 
-<section id="education">
+<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<section id="contact" class="contact" aria-labelledby="contact-h">
   <div class="container">
-    <div class="reveal">
-      <p class="section-label">Foundation</p>
-      <h2 class="section-title">Education</h2>
-    </div>
-    <div class="edu-card reveal">
-      <div class="edu-degree">Bachelor in Computer Science</div>
-      <div class="edu-school">Autonomous University of Nuevo Leon</div>
-      <div class="edu-faculty">Faculty of Physical-Mathematical Sciences</div>
+    <div class="contact-inner">
+
+      <div class="reveal">
+        <div class="deco-rule deco-rule--center" aria-hidden="true" style="margin-bottom:36px;">
+          <div class="deco-line"></div>
+          <div class="deco-diamond deco-diamond--lg"></div>
+          <div class="deco-line"></div>
+        </div>
+        <p class="section-label">Open to Collaboration</p>
+        <h2 class="contact-title" id="contact-h">Let's Build Something&nbsp;Exceptional.</h2>
+        <p class="contact-sub">
+          Whether you need a senior .NET architect, a migration lead, or someone who delivers clean, enterprise-grade code on deadline — I'd be glad to talk.
+        </p>
+        <div class="contact-cta">
+          <a href="mailto:jorge.silva.it@icloud.com" class="btn-gold">Write to Me</a>
+          <a href="https://www.linkedin.com/in/fullstack-developer-jorge-silva/"
+             target="_blank" rel="noopener"
+             class="btn-ghost"
+             aria-label="LinkedIn profile (opens in new tab)">
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bar reveal">
+        <span class="footer-copy">© <span id="year"></span> Jorge Silva — jorge.silva.it@icloud.com</span>
+        <button class="btn-print no-print" onclick="window.print()" aria-label="Print or save as PDF">
+          Print / PDF
+        </button>
+      </div>
+
     </div>
   </div>
 </section>
 
-<footer class="footer" id="contact">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-tagline">Let's build something great.</div>
-      <div class="footer-buttons">
-        <a href="mailto:jorge.silva.it@icloud.com" class="btn-primary">✉ Contact Me</a>
-        <a href="https://www.linkedin.com/in/fullstack-developer-jorge-silva/" target="_blank" rel="noopener" class="btn-secondary">in LinkedIn</a>
-      </div>
-      <div class="footer-copy">© 2025 Jorge Silva</div>
-    </div>
-  </div>
-</footer>
-
-<script>
-// Scroll reveal
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, i * 80);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// Smooth nav highlight
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-</script>
-
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
