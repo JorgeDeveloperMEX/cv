@@ -129,8 +129,12 @@ document.addEventListener('keydown', e => {
     });
   }
 
+  const isPhone = () => W < 760;
+  let builtW = 0, builtH = 0;
+
   function build() {
     const r = host.getBoundingClientRect();
+    builtW = r.width; builtH = r.height;
     W = r.width; H = r.height;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = W * dpr; canvas.height = H * dpr;
@@ -152,11 +156,15 @@ document.addEventListener('keydown', e => {
       makeChip(W * 0.06, H * 0.80, 5, ['left', 'right', 'top', 'bottom']);
       makeChip(W * 0.94, H * 0.74, 5, ['left', 'right', 'top', 'bottom']);
     } else {
-      makeChip(W * 0.12, H * 0.22, 4, ['left', 'right', 'top', 'bottom']);
-      makeChip(W * 0.88, H * 0.78, 4, ['left', 'right', 'top', 'bottom']);
+      // phones: three chips, pins only on the sides that face the screen
+      // (left-edge pins on a left-edge chip would run straight off-screen)
+      makeChip(W * 0.14, H * 0.16, 4, ['right', 'top', 'bottom']);
+      makeChip(W * 0.86, H * 0.50, 4, ['left', 'top', 'bottom']);
+      makeChip(W * 0.14, H * 0.84, 4, ['right', 'top', 'bottom']);
     }
 
-    const count = Math.round(traces.length * 0.45);
+    // phones have fewer traces, so give each one more traffic
+    const count = Math.round(traces.length * (isPhone() ? 0.9 : 0.45));
     for (let i = 0; i < count; i++) signals.push(newSignal(true));
     drawStatic();
     if (reduced) render(); // static frame only
@@ -166,7 +174,7 @@ document.addEventListener('keydown', e => {
     const t = traces[(Math.random() * traces.length) | 0];
     return {
       t,
-      pos: randomStart ? rand(-t.total, t.total) : rand(-200, 0), // negative = waiting
+      pos: randomStart ? rand(-t.total * 0.3, t.total) : rand(isPhone() ? -60 : -200, 0), // negative = waiting
       speed: rand(70, 170),
       len: rand(26, 60)
     };
@@ -266,7 +274,16 @@ document.addEventListener('keydown', e => {
   start();
   document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
   let rt;
-  new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(build, 150); }).observe(host);
+  // Mobile browsers resize the viewport while scrolling (address bar shows/hides).
+  // Rebuilding on that would reset every signal mid-flight, so only rebuild on
+  // real changes: a new width (rotation, window resize) or a large height jump.
+  new ResizeObserver(() => {
+    clearTimeout(rt);
+    rt = setTimeout(() => {
+      const r = host.getBoundingClientRect();
+      if (Math.abs(r.width - builtW) > 1 || Math.abs(r.height - builtH) > 160) build();
+    }, 150);
+  }).observe(host);
 })();
 
 // ── Smooth scroll for anchor links ─────────────────────────────────

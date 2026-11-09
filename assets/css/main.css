@@ -68,6 +68,19 @@ body::before{
           mask-image:radial-gradient(ellipse 38% 70% at 50% 50%, rgba(0,0,0,0.45) 0%, #000 100%);
 }
 .circuit-bg canvas{display:block;width:100%;height:100%;}
+/* Size to the "large" viewport so the layer doesn't resize while the
+   mobile address bar slides in and out during scroll */
+@supports (height:100lvh){
+  .circuit-bg{bottom:auto;height:100lvh;}
+}
+/* On phones the content spans the full width, so the centre fade would
+   dim almost everything — use a much lighter fade there */
+@media screen and (max-width:760px){
+  .circuit-bg{
+    -webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,0,0,0.75) 0%, #000 100%);
+            mask-image:radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,0,0,0.75) 0%, #000 100%);
+  }
+}
 
 /* ══════════════════════════════════════════
    SKIP / FOCUS
